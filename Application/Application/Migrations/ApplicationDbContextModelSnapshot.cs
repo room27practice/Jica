@@ -46,6 +46,9 @@ namespace Application.Migrations
                         .HasMaxLength(64)
                         .HasColumnType("nvarchar(64)");
 
+                    b.Property<string>("Gender")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("LastName")
                         .HasMaxLength(64)
                         .HasColumnType("nvarchar(64)");

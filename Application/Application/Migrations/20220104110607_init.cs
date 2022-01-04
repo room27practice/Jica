@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Application.Migrations
 {
-    public partial class initial : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -27,6 +27,7 @@ namespace Application.Migrations
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Address = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+                    Gender = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     FirstName = table.Column<string>(type: "nvarchar(64)", maxLength: 64, nullable: true),
                     LastName = table.Column<string>(type: "nvarchar(64)", maxLength: 64, nullable: true),
                     Town = table.Column<string>(type: "nvarchar(32)", maxLength: 32, nullable: true),

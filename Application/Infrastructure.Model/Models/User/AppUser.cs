@@ -14,6 +14,8 @@
         [MaxLength(256)]
         public string Address { get; set; }
 
+        public string Gender { get; set; }
+
         [MaxLength(64)]
         public string FirstName { get; set; }
 
